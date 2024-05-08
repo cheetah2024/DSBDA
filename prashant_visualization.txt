@@ -1,0 +1,35 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Boxplot
+sns.boxplot(x=df['chol'])
+plt.title('Boxplot of Cholesterol Level')
+plt.show()
+
+# Histogram plot
+sns.histplot(df['chol'], bins=10)
+plt.title('Histogram of Cholesterol Level')
+plt.xlabel('Cholesterol Values')
+plt.ylabel('Frequency')
+plt.show()
+
+# Single Line Graph
+plt.plot(df['age'], df['slope'])
+plt.xlabel('Age')
+plt.ylabel('Slope')
+plt.title('Age vs. Slope')
+plt.grid(True)
+plt.show()
+
+# Multiline Graph
+female_data = df[df['sex'] == 0]
+male_data = df[df['sex'] == 1]
+
+plt.plot(female_data['age'], female_data['chol'], label='Female')
+plt.plot(male_data['age'], male_data['chol'], label='Male')
+plt.xlabel('Age')
+plt.ylabel('Cholesterol Level')
+plt.title('Cholesterol Level by Age and Gender')
+plt.legend()
+plt.grid(True)
+plt.show()
