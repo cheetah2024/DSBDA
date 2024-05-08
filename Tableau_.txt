@@ -1,0 +1,55 @@
+﻿Tableau: 
+
+
+STep 1- open tableau,connect,microsoft excel, open adult data set
+Step 2- go to worksheet option, left down corner
+
+
+Step 3- go to age column on right, choose histogram on right, 
+Column: Age(bin)        Row: CNT(Age)
+
+
+Step 4- Drag capital gain, capital loss to Marks column just next to it with step3 execution open
+Step 5- click labels in mark column, choose show mark labels(tick box)
+Step 6- Edit sheet 1 title to histogram
+—-------------
+
+
+Step 7- create sheet 2,on top, drag longitude to the column, latitude to the row and choose symbol maps on right side 
+
+
+Step 8- in marks, choose any color, in labels tick all, and drag capital gain,capital loss,adult data, hours per week  in marks column and again select symbol map on right side
+Rename sheet 2 : map
+—---------------------------------
+
+
+Step 9-Sheet 3 
+In marks column, capital gain,loss 
+In column option: occupation
+Then drag capital gain from marks to column option, choose tree map on right side and rename file to tree map
+
+
+—---------------------------
+
+
+Step 10- sheet 4: rename to pie chart 
+In column: capital gain , in row: capital loss
+Drag marital status,relationship to marks and choose pie chart
+Remove capital loss, drag marital status to marks, go to labels, show all and increase size
+On menu bar, below window help, choose third last  option, choose entire view to increase size
+
+
+—-------------------------
+Step 11- sheet 5 :drag capital loss to rows 
+Drag marital status, occupation to marks column
+Choose any color, choose stack bars on right
+—---------------------
+Step 12: sheet 6 rename to map
+Latitude: column, row: longitude,   native country,capital gain drag to marks column
+Choose symbol map
+—-------------------------------------
+Step 13: sheet 7 
+Column: marital status, rows: capital gain    choose stacked bars 
+—---------------------------
+Step 14: sheet 8
+Column: marital status, row: capital loss    marks:education
