@@ -1,0 +1,86 @@
+Create database:
+create database mydb2;
+
+Use that database:
+use mydb2;
+
+create table:
+create table flight(fno int,year int,dest varchar(10),delay float)
+-->row format delimited
+-->field terminated by ','
+-->lines terminated by '\n'
+-->stored as textfile;
+
+Rename table:
+alter table flight rename to air_flight
+
+Add column:
+alter table flight add columns(source varchar(10));
+
+Delete table:
+drop table flight;
+
+Display table:
+desc flight;
+
+Insert values:
+insert into flight values(123,2009,"Mumbai",30.6);
+
+Show content of table:
+select *from flight;
+
+Join tables:
+create table nflight(fno int,year int,dest varchar(10))
+-->row format delimited
+-->field terminated by ','
+-->lines terminated by '\n'
+-->stored as textfile;
+
+insert records in nflight table;
+Allies for both tables:
+select a.fno,a.year,a.dest,a.delay,b.fno);
+-->from flight a.join nflight b;------->describe allies 
+-->on (a.fno=bfno)------------#primary key
+
+To store result in new table: cascade tables
+c
+
+
+Load table:
+In terminal 1:-
+create file
+cat filename;
+copy file in hdfs(Hadoop file sys)
+
+in terminal2:
+load data inpath '_____copy path____' overwrite into flight table;
+
+
+Aggregation functions:
+1]Sum():
+	select sum(salary)from employee;
+2]Avg():
+	select avg(salary) from employee;
+3]Max():
+	select max(salary) from employee;
+4]Min():
+	select min(salary) from employee;
+5]Count():
+	select count(*) from employee;
+
+
+From text file to table:
+Termainal1:-
+gedit f.txt;
+In text file insert records in the same order as the table in which they are to be inserted.
+pwd;
+ls;--------#hive table and text file should be in same env
+
+Terminal2:
+load data local path "f.txt"
+-->overwrite into table flight;
+
+select *form flight;
+
+INDEX:
+?
